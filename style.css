@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap%27");
+
 body {
   padding: 0 0;
   color: white;
@@ -15,7 +17,7 @@ nav {
   padding: 25vh 0;
   display: flex;
   justify-content: center;
-  margin-bottom: 15%;
+  margin-bottom: 7.5%;
 }
 .events-timeline {
   text-decoration: none;
@@ -28,25 +30,28 @@ nav {
 .event-timeline1 {
   left: 20%;
   align-content: flex-start;
+  animation: shift-right-1 3s;
 }
 
 .event-timeline2 {
   left: 65%;
   align-content: flex-start;
+  animation: shift-right-2 3s;
 }
 
 .event-timeline3 {
   left: 80%;
   align-content: flex-start;
+  animation: shift-right-3 3s;
 }
 
 h1 {
   text-align: center;
-  font-size: 4vw;
+  font-size: 4em;
 }
 h2 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 3em;
 }
 li {
   color: white;
@@ -60,13 +65,21 @@ li {
   font-size: 1.3em;
 }
 
+.text {
+  width: 50%;
+}
+
+.intro-img {
+  width: 40%;
+}
 section {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .eventimg {
-  width: 100%;
+  width: 65vw;
   margin: 5% auto;
   margin-bottom: 7%;
 }
@@ -77,6 +90,7 @@ a:visited {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .event1 {
@@ -87,4 +101,96 @@ a {
 }
 .event3 {
   background-color: rgb(7, 13, 13);
+}
+
+#quote-voltaire {
+  color: #bba14f;
+  margin-bottom: 7.5%;
+  font-family: Corinthia;
+  font-size: 2em;
+}
+
+.content {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.single-text {
+  width: 70%;
+}
+.content-text-only {
+  margin-top: 1em;
+}
+
+#active-site {
+  color: #08b5ff;
+}
+
+p {
+  font-size: 1em;
+}
+
+@keyframes shift-right-1 {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 20%;
+  }
+}
+
+@keyframes shift-right-2 {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 65%;
+  }
+}
+@keyframes shift-right-3 {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 80%;
+  }
+}
+/* Mobil */
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .text {
+    width: 90%;
+  }
+  .intro-img {
+    width: 70%;
+  }
+  body {
+    font-size: 18px;
+  }
+}
+/* Ipad */
+@media screen and (min-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  .text {
+    width: 90%;
+  }
+  .intro-img {
+    width: 70%;
+  }
+  body {
+    font-size: 20px;
+  }
+}
+/* Dator */
+@media screen and (min-width: 992px) {
+  .content {
+    flex-direction: row;
+  }
 }
