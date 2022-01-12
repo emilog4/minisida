@@ -10,7 +10,7 @@ html {
 }
 
 nav {
-  background-image: url(Karl_XIIs_likfard.jpg);
+  background-image: url(images/Karl_XIIs_likfard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,6 +62,13 @@ li {
   position: absolute;
   left: 30%;
   top: -8%;
+  font-size: 1.3em;
+}
+
+.fa-home {
+  position: absolute;
+  left: 30%;
+  top: -40%;
   font-size: 1.3em;
 }
 
@@ -130,6 +137,34 @@ a {
 
 p {
   font-size: 1em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer ul {
+  list-style: none;
+  gap: 0.5em;
+  display: flex;
+}
+
+footer ul li {
+  position: relative;
+}
+
+footer p {
+  margin-left: 2em;
+}
+
+footer form {
+  margin-left: 2em;
+}
+
+.info_images_link {
+  text-align: center;
 }
 
 @keyframes shift-right-1 {
